@@ -1,0 +1,77 @@
+<html>
+  <body>
+    <h1>Add book</h1>
+    <form method="POST" action="/">
+      <input type="text" name="title">
+      <input type="text" name="lastname">
+      <input type="text" name="email">
+      <input type="text" name="phno">
+      <input type="text" name="gender">
+      <input type="text" name="course">
+      <input type="text" name="regno">
+      <input type="text" name="sem">
+
+      <input type="submit" value="Add">
+    </form>
+
+    <h1>Books</h1>
+    <table>
+      {% for book in books %}
+        <tr>
+          <td>{{book.id}}</td>
+          <td>
+            {{book.title}}
+          </td>
+           <td>
+            {{book.lastname}}
+          </td>
+          <td>
+            {{book.email}}
+          </td>
+          <td>
+            {{book.phno}}
+          </td>
+          <td>
+            {{book.gender}}
+          </td>
+          <td>
+            {{book.course}}
+          </td>
+          <td>
+            {{book.regno}}
+          </td>
+          <td>
+            {{book.sem}}
+          </td>
+          <td>
+            <form method="POST" action="./update" style="display: inline">
+              <input type="hidden" value="{{book.title}}" name="oldtitle">
+              <input type="text" value="{{book.title}}" name="newtitle">
+              <input type="hidden" value="{{book.lastname}}" name="oldlastname">
+              <input type="text" value="{{book.lastname}}" name="newlastname">
+              <input type="hidden" value="{{book.email}}" name="oldemail">
+              <input type="text" value="{{book.email}}" name="newemail">
+              <input type="hidden" value="{{book.phno}}" name="oldphno">
+              <input type="text" value="{{book.phno}}" name="newphno">
+              <input type="hidden" value="{{book.gender}}" name="oldgender">
+              <input type="text" value="{{book.gender}}" name="newgender">
+              <input type="hidden" value="{{book.course}}" name="oldcourse">
+              <input type="text" value="{{book.course}}" name="newcourse">
+              <input type="hidden" value="{{book.regno}}" name="oldregno">
+              <input type="text" value="{{book.regno}}" name="newregno">
+              <input type="hidden" value="{{book.sem}}" name="oldsem">
+              <input type="text" value="{{book.sem}}" name="newsem">
+              <input type="submit" value="Update">
+            </form>
+          </td>
+          <td>
+            <form method="POST" action="./delete" style="display: inline">
+              <input type="hidden" value="{{book.title}}" name="title">
+              <input type="submit" value="Delete">
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

@@ -1,0 +1,410 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Register</title>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+        <style>
+        body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #EEEEEE;
+    background-repeat: no-repeat
+}
+
+a {
+    color: #000
+}
+
+.card0 {
+    box-shadow: 0px 4px 8px 0px #757575;
+    border-radius: 20px
+}
+
+.card1 {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #4e9cef;
+    height: 100%;
+    color: #fff;
+    padding-left: 13%;
+    padding-right: 13%
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 15px;
+    cursor: pointer
+}
+
+.card2 {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px
+}
+
+.social-connect .fa-google-plus {
+    color: #df4b37;
+    padding: 10px 12px;
+    font-size: 20px
+}
+
+.social-connect .fa-facebook-square {
+    color: #3b5998;
+    padding: 10px 15px;
+    font-size: 20px
+}
+
+.social-connect {
+    padding: 3px 0px 3px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #E0E0E0
+}
+
+.social-connect:hover {
+    background-color: #EEEEEE
+}
+
+.line {
+    height: 1px;
+    width: 45%;
+    background-color: #E0E0E0;
+    margin-top: 10px
+}
+
+.or {
+    width: 10%
+}
+
+.text-sm {
+    font-size: 14px !important
+}
+
+input {
+    padding: 10px 12px 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #4e9cef;
+    outline-width: 0
+}
+
+::placeholder {
+    color: #EEEEEE;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #EEEEEE
+}
+
+::-ms-input-placeholder {
+    color: #EEEEEE
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.btn-blue {
+    background-color: #4e9cef;
+    width: 100%;
+    color: #fff;
+    border-radius: 6px
+}
+
+.btn-blue:hover {
+    background-color: #4e9cef;
+    color: #fff;
+    cursor: pointer
+}
+.btn-blues {
+    background-color: #FF9900;
+    width: 100%;
+    color: #fff;
+    border-radius: 6px
+}
+
+.btn-blues:hover {
+    background-color: #FF9900;
+    color: #fff;
+    cursor: pointer
+}
+.card-0 {
+    color: #4e9cef;
+    background-color: #fff;
+    border-radius: 20px;
+    min-height: 352px;
+    margin-top: 80px;
+    padding: 30px
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -100px;
+    display: -webkit-box !important
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 0.5;
+    margin: 5px !important
+}
+
+.carousel-indicators li.active {
+    opacity: 1;
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 0px !important;
+    border: 2px solid #fff
+}
+
+.carousel-indicators li#li1 {
+    background: url("https://i.imgur.com/IjkibdE.jpg") !important;
+    background-size: cover !important
+}
+
+.carousel-indicators li#li2 {
+    background: url("https://i.imgur.com/oW8Wpwi.jpg") !important;
+    background-size: cover !important
+}
+
+.carousel-indicators li#li3 {
+    background: url("https://i.imgur.com/EUYNvE1.jpg") !important;
+    background-size: cover !important
+}
+
+.carousel-indicators li#li4 {
+    background: url("https://i.imgur.com/ndQx2Rg.jpg") !important;
+    background-size: cover !important
+}
+
+.carousel-indicators li#li5 {
+    background: url("https://i.imgur.com/gazoShk.jpg") !important;
+    background-size: cover !important
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px)
+}
+
+.content {
+    color: #000;
+    font-size: 14px
+}
+
+.social {
+    margin-top: 150px
+}
+
+@media screen and (max-width: 991px) {
+    .card1 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px
+    }
+
+    .card2 {
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px
+    }
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+    </style>
+    <body>
+        <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
+            <div class="card card0 border-0">
+                <div class="row d-flex">
+                    <div class="col-lg-5">
+                        <div class="card1 pb-5">
+                            <div class="row px-3">
+                            </div>
+                            <div class="row px-3 justify-content-center mt-4 mb-5">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active card border-0 card-0">
+                                            <img src="https://alyssum.global/assets/images/cloud.png" class="floating" alt="" width="500px" height="400px">  
+                                            <h3 class="font-weight-bold mt-5">Registration Form</h3> <h6 class="mb-2">please fill the required fields</h6>
+                                            <hr width="50%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card2 card border-0 px-4 px-sm-5 py-5"> <small class="text-right mb-3"><a href=""><u></u></a></small>
+                            <h3 class="mb-1">Student Registration</h3>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="w-full" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="w-full flex flex-col justify-center content-center	 h-2/5">
+                                        <ul class="m-auto py-6">
+                                            {% with messages = get_flashed_messages()  %}
+                                            {% if messages %}
+                                            {% for message in messages %}
+                                            <!--Foreach-->
+                                            <li>
+                                                <!--Place your compoet here-->
+                                                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                                    {{ message }}
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                      <span aria-hidden="true">×</span>
+                                                    </button>
+                                                  </div>                            </li>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                                  {% endwith %}
+                                                </ul>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <form method="POST" action="/register">
+                                                    <div class=" relative ">
+                                                        <input type="text" id="rounded-email"  name="title" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your first name *" required=""/>
+                                                    </div>
+                                            </div>
+                                          
+                                            <div class="form-group">
+                                                <div class=" relative ">
+                                                    <input type="text" name="email" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your email address" required=""/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class=" relative ">
+                                                    <input type="text" name="city" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your city" required=""/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <form method="POST" action="/register">
+                
+                                                <select class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 text-gray-400 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name = "gender" >
+                                                    <option class="rounded-t bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap text-gray-400">Select your gender</option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Others</option>
+                                                </select>
+                                            </div>
+                                            <br>
+                                            <div class="form-group">
+                                                <div class=" relative ">
+                                                    <input type="text" name="regno" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your regstartion number" required=""/>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <form method="POST" action="/register">
+                                                    <div class=" relative ">
+                                                        <input type="text" name="lastname" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your Last Name" required=""/>
+                                                    </div>
+                                           </div>
+                                          
+                                            <div class="form-group">
+                                                <div class=" relative ">
+                                                    <input type="text" name="phno" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your phone number" pattern="(\+91)?(-)?\s*?(91)?\s*?(\d{3})-?\s*?(\d{3})-?\s*?(\d{4})"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class=" relative ">
+                                                    <input type="text" name="col" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your college" required=""/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <form method="POST" action="/register">
+                
+                                                <select class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 text-gray-400 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name = "course" required="select any one" >
+                                                    <option class="rounded-t bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap text-gray-400"  selected disabled>Select your course</option>
+                                                    <option>Msc BDA</option>
+                                                    <option>Msc CS</option>
+                                                    <option>Msc Mathematics</option>
+                                                    <option>Msc Statistics</option>
+                
+                                                </select>
+                                            </div>
+                                            <br>
+                                           <div class="form-group">
+                                                <form method="POST" action="/register">
+                
+                                                <select class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 text-gray-400 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name = "sem" >
+                                                    <option class="rounded-t bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap text-gray-400"  selected disabled>Semester</option>
+                                                    <option>1st Semester</option>
+                                                    <option>2nd Semester</option>
+                                                    <option>3rd Semester</option>
+                                                    <option>4th Semester</option>
+                
+                                                </select>
+                                            </div>
+                                                                                        <br>
+
+                                            <div class="row mb-4">
+                                                <div class="col-md-6"> 
+                                                <button type="submit" value="Register" class="btn btn-blue text-center mb-1 py-2">
+                                                    Register
+                                                </button>
+                                            </div>
+                                                <div class="col-md-6"> <a href = "/table" class="btn btn-blues text-center mb-1 py-2">Database</a> </div>
+
+                                            </div>
+                <!-- 
+                                            <button type="button" class="btn btn-labeled btn-default">
+                                                <i class="" style="font-size:20px"></i>
+                                                </button>
+                                                <br></br>
+                                            <input type="submit" class="btnRegister" value="Register" /> -->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                                            <script type='text/javascript'></script>
+                                            </body>
+    </body>
+</html>
